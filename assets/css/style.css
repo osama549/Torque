@@ -2091,7 +2091,6 @@ font-family: 'Race Sport';
         background: transparent;
         color: #fff;
         border: 2px solid #fff;
-        padding: 4px 15px;
         font-weight: lighter;
         text-decoration: none;
         letter-spacing: 1px;
@@ -2100,7 +2099,9 @@ font-family: 'Race Sport';
         margin-bottom: 10px;
         display: block;
         text-align: center;
-        padding-top:10px;
+             line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 0;
 }
 .hero-section {
     height: 600px;
