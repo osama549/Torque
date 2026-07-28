@@ -1,32 +1,31 @@
- 
- @font-face {
-    font-family: 'Made Tommy Light';
-    src: url('../fonts/tommyR.woff2') format('woff2'),
-         url('../fonts/tommyR.woff') format('woff');
-    font-weight: 300; /* Light ke liye */
-    font-style: normal;
-    font-display: swap;
+@font-face {
+  font-family: "Made Tommy Light";
+  src: url("../fonts/tommyR.woff2") format("woff2"),
+    url("../fonts/tommyR.woff") format("woff");
+  font-weight: 300; /* Light ke liye */
+  font-style: normal;
+  font-display: swap;
 }
 
 /* MADE TOMMY Medium */
 @font-face {
-    font-family: 'Made Tommy Medium';
-    src: url('../fonts/tommyM.woff2') format('woff2'),
-         url('../fonts/tommyM.woff2') format('woff');
-    font-weight: 500; /* Medium ke liye */
-    font-style: normal;
-    font-display: swap;
+  font-family: "Made Tommy Medium";
+  src: url("../fonts/tommyM.woff2") format("woff2"),
+    url("../fonts/tommyM.woff2") format("woff");
+  font-weight: 500; /* Medium ke liye */
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-    font-family: 'Race Sport';
-    src: url('../fonts/Race\ Sport.woff2') format('woff2'),
-         url('../fonts/Race\ Sport.woff') format('woff');
-    font-weight: 500; /* Medium ke liye */
-    font-style: normal;
-    font-display: swap;
+  font-family: "Race Sport";
+  src: url("../fonts/Race\ Sport.woff2") format("woff2"),
+    url("../fonts/Race\ Sport.woff") format("woff");
+  font-weight: 500; /* Medium ke liye */
+  font-style: normal;
+  font-display: swap;
 }
-p{
-     font-family: 'Made Tommy Light';
+p {
+  font-family: "Made Tommy Light";
 }
 .top-announcement-bar,
 .navbar-brand,
@@ -39,665 +38,708 @@ p{
 .why-torque-section .section-heading-2,
 .why-torque-section .feature-item,
 .why-torque-section .book-race-btn,
-.why-torque-section .right-image-col{
-    opacity:0;
-    visibility:hidden;
+.why-torque-section .right-image-col {
+  opacity: 0;
+  visibility: hidden;
 }
 html {
   scroll-behavior: smooth;
 }
- body {
-            background-color: #0b0b0b;
-            color: #fff;
-            font-family: 'Made Tommy Medium';
-        }
-        h1,h2,h3,h4,h5,h6{
-           font-family: 'Race Sport'; 
-        }
-
-        /* Top Announcement Bar */
-        .top-announcement-bar {
-            background-color: #111;
-            border-bottom: 1px solid #222;
-             
-            padding: 6px 0;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        p{
-            color: #fff;
-            font-size: 11px;
-            letter-spacing: 1px;
-            margin: 0;
-        }
-
-        /* Header / Navbar */
-        .navbar-custom {
-            background-color: #0b0b0b;
-            padding: 10px 0;
-            border-bottom: 1px solid #1a1a1a;
-            margin: 0 50px;
-        }
-        .navbar-brand img, .brand-text {
-            font-weight: 900;
-            font-style: italic;
-            font-size: 24px;
-            color: #fff;
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
-        .brand-sub {
-            display: block;
-            font-size: 8px;
-            letter-spacing: 3px;
-            color: #ff2222;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-        .navbar-nav .nav-link {
-            color: #fff !important;
-            font-weight: 600;
-            font-size: 18px;
-            text-transform: uppercase;
-            margin: 0 12px;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-            font-family: 'Race Sport';
-            letter-spacing: 2px;
-        }
-        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
-            color: #ff2222 !important;
-        }
-        
-        /* Book Your Race Button with Bevel / Custom Shape */
-        .btn-book-race {
-            background-color: #b30000;
-            color: #fff;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 13px;
-            padding: 12px 30px;
-            letter-spacing: 1px;
-            border: none;
-            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0% 100%, 0% 15px);
-            transition: background 0.3s;
-        }
-        .btn-book-race:hover {
-            background-color: #e60000;
-            color: #fff;
-        }
-
-        /* Hero Section with Beveled Container */
-        .hero-section {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .hero-section:before {
-    content: '';
-    background: #000;
-    opacity: 0.5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+body {
+  background-color: #0b0b0b;
+  color: #fff;
+  font-family: "Made Tommy Medium";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Race Sport";
 }
 
-        .card-top-left-bottom-right {
-            width: 100%;
-            min-height: 650px;
-            padding: 50px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: absolute;
+/* Top Announcement Bar */
+.top-announcement-bar {
+  background-color: #111;
+  border-bottom: 1px solid #222;
+
+  padding: 6px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
-      
-
-        /* Hero Headings */
-        .hero-title-area {
-            z-index: 2;
-                padding-left: 50px;
-        }
-        .hero-heading-1 {
-                color: #ff2a2a;
-            font-weight: 900;
-            font-size: 97px;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1;
-            letter-spacing: 2px;
-
-        }
-        .hero-heading-2 {
-                color: #939396;
-            font-weight: 900;
-            font-size: 116px;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1.1;
-            letter-spacing: 2px;
-            margin-top: 5px;
-        }
-
-        /* Footer Center 'X' Logo mark */
-        .hero-footer-mark {
-            text-align: center;
-            z-index: 2;
-        }
-        .hero-footer-mark span {
-            color: #b30000;
-            font-size: 40px;
-            font-weight: 900;
-            font-style: italic;
-        }
-
-        .book-race-btn {
-            padding: 15px 40px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-family: 'Race Sport';
-            border-radius: 0 15px 15px 0;
-            background-image:url('../images/header-btn.png');
-                background-color: transparent;
-            color: #ffffff;
-            font-weight: 900; /* Boldest */
-            font-size: 18px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-style: italic; /* Jaisa image mein hai */
-            display: inline-flex;        /* flex ki jagah inline-flex kar dein */
-            width: max-content;
-            justify-content: center;
-            align-items: center;
-        }
-       .book-race-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(200, 0, 0, 0.5);
-        }
-       header{
-       background-image: url(../images/banner-image.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    overflow: hidden;
-       }
-      header video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-        object-fit: cover;
+p {
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-        /* Hover Effect */
+/* Header / Navbar */
+.navbar-custom {
+  background-color: #0b0b0b;
+  padding: 10px 0;
+  border-bottom: 1px solid #1a1a1a;
+  margin: 0 50px;
+}
+.navbar-brand img,
+.brand-text {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.brand-sub {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #ff2222;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+  font-family: "Race Sport";
+  letter-spacing: 2px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff2222 !important;
+}
 
+/* Book Your Race Button with Bevel / Custom Shape */
+.btn-book-race {
+  background-color: #b30000;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  border: none;
+  clip-path: polygon(
+    15px 0%,
+    100% 0%,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    0% 100%,
+    0% 15px
+  );
+  transition: background 0.3s;
+}
+.btn-book-race:hover {
+  background-color: #e60000;
+  color: #fff;
+}
 
-        img.img-fluid.home-banner {
-    margin-top: -150px;
+/* Hero Section with Beveled Container */
+.hero-section {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-section:before {
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-top-left-bottom-right {
+  width: 100%;
+  min-height: 650px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+}
+
+/* Hero Headings */
+.hero-title-area {
+  z-index: 2;
+  padding-left: 50px;
+}
+.hero-heading-1 {
+  color: #ff2a2a;
+  font-weight: 900;
+  font-size: 97px;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+.hero-heading-2 {
+  color: #939396;
+  font-weight: 900;
+  font-size: 116px;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+/* Footer Center 'X' Logo mark */
+.hero-footer-mark {
+  text-align: center;
+  z-index: 2;
+}
+.hero-footer-mark span {
+  color: #b30000;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.book-race-btn {
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Race Sport";
+  border-radius: 0 15px 15px 0;
+  background-image: url("../images/header-btn.png");
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 900; /* Boldest */
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: italic; /* Jaisa image mein hai */
+  display: inline-flex; /* flex ki jagah inline-flex kar dein */
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+}
+.book-race-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 0, 0, 0.5);
+}
+header {
+  background-image: url(../images/banner-image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Effect */
+
+img.img-fluid.home-banner {
+  margin-top: -150px;
 }
 
 .stats-section {
-            background-color: #0b0b0b;
-            padding: 80px 0;
-            border-top: 1px solid #1a1a1a;
-            border-bottom: 1px solid #1a1a1a;
-        }
+  background-color: #0b0b0b;
+  padding: 80px 0;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
 
-        .stat-box {
-            text-align: center;
-            padding: 15px;
-        }
+.stat-box {
+  text-align: center;
+  padding: 15px;
+}
 
-        .stat-number {
-            font-size: 3.5rem;
-            font-weight: 950;
-            font-style: italic;
-            text-transform: uppercase;
-            line-height: 1;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            
-        }
-.stat-number span{
-        font-family: 'Race Sport';
-        }
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 950;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.stat-number span {
+  font-family: "Race Sport";
+}
 
 .stat-number .grey-text {
-    color: #939396;
+  color: #939396;
 }
 
- .stat-number .red-text {
-    color: #ff2a2a;
+.stat-number .red-text {
+  color: #ff2a2a;
 }
 
-        .stat-label {
-            color: #ffffff;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-                font-family: 'Made Tommy Light';
-        }
+.stat-label {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Made Tommy Light";
+}
 
+.why-torque-section {
+  background-color: #0b0b0b;
+  padding: 80px 0;
+  position: relative;
+}
 
+/* Section Subtitle & Headings */
+.section-subtitle {
+  color: #939396;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 
-        .why-torque-section {
-            background-color: #0b0b0b;
-            padding: 80px 0;
-            position: relative;
-        }
+.section-heading-1 {
+  font-size: 3rem;
+  font-weight: 950;
+  font-style: italic;
+  color: #939396;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
 
-        /* Section Subtitle & Headings */
-        .section-subtitle {
-            color: #939396;
-            font-size: 0.85rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+.section-heading-2 {
+  font-size: 3rem;
+  font-weight: 950;
+  font-style: italic;
+  color: #ff2a2a;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
 
-        .section-heading-1 {
-            font-size: 3rem;
-            font-weight: 950;
-            font-style: italic;
-            color: #939396;
-            text-transform: uppercase;
-            line-height: 1.1;
-            margin-bottom: 0;
-        }
+/* Feature Item Styling */
+.feature-item {
+  margin-bottom: 30px;
+}
 
-        .section-heading-2 {
-            font-size: 3rem;
-            font-weight: 950;
-            font-style: italic;
-                color: #ff2a2a;
-            text-transform: uppercase;
-            line-height: 1.1;
-            margin-bottom: 40px;
-        }
+.feature-title {
+  color: #ff2a2a;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 
-        /* Feature Item Styling */
-        .feature-item {
-            margin-bottom: 30px;
-        }
+.feature-desc {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
 
-        .feature-title {
-                color: #ff2a2a;
-            font-size: 0.95rem;
-            font-weight: 900;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
+/* Learn More Button Styling */
+.learn-more-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 40px 14px 55px;
+  background: linear-gradient(
+    105deg,
+    #000000 0%,
+    #000000 35%,
+    #881111 40%,
+    #cc0000 100%
+  );
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: none;
+  border-radius: 0 30px 30px 0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(200, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
 
-        .feature-desc {
-            color: #b0b0b0;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-bottom: 0;
-        }
+.learn-more-btn::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  width: 12px;
+  height: 110%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(136, 17, 17, 0.8) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: rotate(14deg);
+}
 
-        /* Learn More Button Styling */
-        .learn-more-btn {
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            padding: 14px 40px 14px 55px;
-            background: linear-gradient(105deg, #000000 0%, #000000 35%, #881111 40%, #cc0000 100%);
-            color: #ffffff;
-            font-weight: 900;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-style: italic;
-            text-decoration: none;
-            border-radius: 0 30px 30px 0;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(200, 0, 0, 0.3);
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
+.learn-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 0, 0, 0.5);
+  color: #ffffff;
+}
 
-        .learn-more-btn::before {
-            content: "";
-            position: absolute;
-            top: -3px;
-            left: 15px;
-            width: 12px;
-            height: 110%;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(136, 17, 17, 0.8) 70%, rgba(0, 0, 0, 0) 100%);
-            transform: rotate(14deg);
-        }
+/* Right Image Card Frame */
+.image-card-frame {
+  border: 2px solid #cc0000;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #151515;
+  padding: 10px;
+  box-shadow: 0 0 25px rgba(204, 0, 0, 0.2);
+}
 
-        .learn-more-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(200, 0, 0, 0.5);
-            color: #ffffff;
-        }
+.image-card-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
 
-        /* Right Image Card Frame */
-        .image-card-frame {
-            border: 2px solid #cc0000;
-            border-radius: 20px;
-            overflow: hidden;
-            background-color: #151515;
-            padding: 10px;
-            box-shadow: 0 0 25px rgba(204, 0, 0, 0.2);
-        }
-
-        .image-card-frame img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            display: block;
-        }
-
-        .inverted-border {
-            border-radius: 12px;
-    clip-path: polygon(
-        30px 0%,         /* Top-left cut start */
-        100% 0%,         /* Top-right corner (seedha) */
-        100% calc(100% - 30px), /* Bottom-right cut start */
-        calc(100% - 30px) 100%, /* Bottom-right cut end */
-        0% 100%,         /* Bottom-left corner (seedha) */
-        0% 30px          /* Top-left cut end */
-    );
+.inverted-border {
+  border-radius: 12px;
+  clip-path: polygon(
+    30px 0%,
+    /* Top-left cut start */ 100% 0%,
+    /* Top-right corner (seedha) */ 100% calc(100% - 30px),
+    /* Bottom-right cut start */ calc(100% - 30px) 100%,
+    /* Bottom-right cut end */ 0% 100%,
+    /* Bottom-left corner (seedha) */ 0% 30px /* Top-left cut end */
+  );
 }
 
 .card-wrapper {
-    background-color: #cc0000; /* Border ka color */
-    padding: 2px;             /* Yeh border ki motai (thickness) banayega */
-    border-radius: 18px;
-    display: inline-block;
-    clip-path: polygon(
-        25px 0%, 
-        100% 0%, 
-        100% calc(100% - 25px), 
-        calc(100% - 25px) 100%, 
-        0% 100%, 
-        0% 25px
-    );
+  background-color: #cc0000; /* Border ka color */
+  padding: 2px; /* Yeh border ki motai (thickness) banayega */
+  border-radius: 18px;
+  display: inline-block;
+  clip-path: polygon(
+    25px 0%,
+    100% 0%,
+    100% calc(100% - 25px),
+    calc(100% - 25px) 100%,
+    0% 100%,
+    0% 25px
+  );
 }
 
 .card-content {
-    background-color: #151515; /* Andar ka background */
-    border-radius: 16px;
-    overflow: hidden;
-    padding: 10px;
-    clip-path: polygon(
-        24px 0%, 
-        100% 0%, 
-        100% calc(100% - 24px), 
-        calc(100% - 24px) 100%, 
-        0% 100%, 
-        0% 24px
-    );
+  background-color: #151515; /* Andar ka background */
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 10px;
+  clip-path: polygon(
+    24px 0%,
+    100% 0%,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0% 100%,
+    0% 24px
+  );
 }
-.card-content img{
-    clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
-    border-radius: 12px;
-    border-radius: 12px;}
+.card-content img {
+  clip-path: polygon(
+    24px 0%,
+    100% 0%,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0% 100%,
+    0% 24px
+  );
+  border-radius: 12px;
+  border-radius: 12px;
+}
 
-    /* Shutter Loader Styling */
+/* Shutter Loader Styling */
 .page-loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #080808;
-    z-index: 99999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #080808;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .loader-content {
-    text-align: center;
+  text-align: center;
 }
 
 .loader-logo {
-    font-family: 'Race Sport', Arial, sans-serif;
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  font-family: "Race Sport", Arial, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .loader-bar {
-    width: 150px;
-    height: 3px;
-    background-color: #cc0000;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+  width: 150px;
+  height: 3px;
+  background-color: #cc0000;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .loader-bar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    animation: loadingBar 1s infinite linear;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  animation: loadingBar 1s infinite linear;
 }
 
 @keyframes loadingBar {
-    0% { left: -100%; }
-    100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .speed-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.speed-slider h3{
-    color: #680809;
-    font-size: 146px;
-    white-space: nowrap;
+.speed-slider h3 {
+  color: #680809;
+  font-size: 146px;
+  white-space: nowrap;
 }
 .speed-slider .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-      width: 100%;
-    text-align: center;
-    padding: 0 15px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
 }
 
-
-
 @keyframes rotateTyre {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .rotating-tyre {
-    animation: rotateTyre 8s linear infinite; /* 3s speed hai, jitni tez ya slow karni ho time kam/ziyada kar sakte hain */
-    transform-origin: center; /* Tyre bilkul apnay center se ghume ga */
+  animation: rotateTyre 8s linear infinite; /* 3s speed hai, jitni tez ya slow karni ho time kam/ziyada kar sakte hain */
+  transform-origin: center; /* Tyre bilkul apnay center se ghume ga */
 }
 
 .speed-slider {
-    padding: 0 0 100px 0;
+  padding: 0 0 100px 0;
 }
 
 .inner {
-    display: flex;
+  display: flex;
 }
 
 /* Section Background & Padding */
 .services-section {
-    background-color: #0d0d0d;
-    padding: 80px 0 20px 0;
-    color: #fff;
+  background-color: #0d0d0d;
+  padding: 80px 0 20px 0;
+  color: #fff;
 }
 
 /* Header Styling */
 .services-section .section-header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .services-section .sub-title {
-        color: #939396;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 10px;
+  color: #939396;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .services-section .main-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    font-style: italic;
-    text-transform: uppercase;
-    color: #939396;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #939396;
+  margin-bottom: 15px;
 }
 
 .services-section .main-title span {
-    color: #ff2a2a;
+  color: #ff2a2a;
 }
 
 .services-section .desc {
-    color: #a0a0a0;
-    font-size: 1rem;
-    max-width: 600px;
+  color: #a0a0a0;
+  font-size: 1rem;
+  max-width: 600px;
 }
 
 /* Service Card Design (Top-Left Cut using clip-path) */
 .service-card {
-    background-color: #161616;
-    border: 1px solid #222;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    clip-path: polygon(
-        30px 0%,             /* Top-left cut start */
-        100% 0%,             /* Top-right corner (seedha) */
-        100% 100%,           /* Bottom-right corner (seedha) */
-        0% 100%,             /* Bottom-left corner (seedha) */
-        0% 30px              /* Top-left cut end */
-    );
-    transition: transform 0.3s ease, border-color 0.3s ease;
+  background-color: #161616;
+  border: 1px solid #222;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  clip-path: polygon(
+    30px 0%,
+    /* Top-left cut start */ 100% 0%,
+    /* Top-right corner (seedha) */ 100% 100%,
+    /* Bottom-right corner (seedha) */ 0% 100%,
+    /* Bottom-left corner (seedha) */ 0% 30px /* Top-left cut end */
+  );
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    border-color: #ff2a2a;
+  transform: translateY(-5px);
+  border-color: #ff2a2a;
 }
 
 /* Card Image */
 .service-card .card-img-wrap img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 /* Card Content */
 .service-card .card-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .service-card .card-category {
-    font-size: 0.85rem;
-    color: #888;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .service-card h3 {
-    font-size: 1.25rem;
-    font-weight: 800;
-    font-style: italic;
-    color: #ff2a2a;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    line-height: 1.2;
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-style: italic;
+  color: #ff2a2a;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  line-height: 1.2;
 }
 
 .service-card p {
-    font-size: 0.85rem;
-    color: #b0b0b0;
-    margin-bottom: 25px;
-    flex-grow: 1;
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin-bottom: 25px;
+  flex-grow: 1;
 }
 
 /* Card Footer (Price & Book Button) */
 .service-card .card-footer-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #262626;
-    padding-top: 15px;
-    margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #262626;
+  padding-top: 15px;
+  margin-top: auto;
 }
 
 .service-card .price {
-font-size: 0.8rem;
-    color: #cccccc;
-    font-family: 'Made Tommy Light';
-    margin: 0;
-    padding: 0;
-    border-bottom: 0;
+  font-size: 0.8rem;
+  color: #cccccc;
+  font-family: "Made Tommy Light";
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
 }
 
 /* Book Button Styling */
 .service-card .book-btn {
-    background: linear-gradient(90deg, #b30000, #ff2a2a);
-    color: #fff;
-    padding: 6px 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
-    transition: opacity 0.2s ease;
+  background: linear-gradient(90deg, #b30000, #ff2a2a);
+  color: #fff;
+  padding: 6px 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  clip-path: polygon(
+    10px 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 10px
+  );
+  transition: opacity 0.2s ease;
 }
 
 .service-card .book-btn:hover {
-    opacity: 0.9;
-    color: #fff;
+  opacity: 0.9;
+  color: #fff;
 }
 .service-card {
-    transition: border-color 0.3s ease; 
+  transition: border-color 0.3s ease;
 }
 
 .why-torque-section video {
-    height: 700px;
-    clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+  height: 700px;
+  clip-path: polygon(
+    20px 0%,
+    100% 0%,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0% 100%,
+    0% 20px
+  );
 }
-.why-torque-section .card-wrapper{
-    margin-left:50px;
+.why-torque-section .card-wrapper {
+  margin-left: 50px;
 }
-.ad-banner{
-    padding: 75px 0;
-    background: #080808;
-    padding-top: 100px;
+.ad-banner {
+  padding: 75px 0;
+  background: #080808;
+  padding-top: 100px;
 }
 
 .seasonal-offers-section {
@@ -710,19 +752,19 @@ font-size: 0.8rem;
 }
 
 .seasonal-offers-section h2 .highlight {
-        color: #cc0000;
+  color: #cc0000;
 }
 
-.seasonal-offers-section .row{
-    align-items: center;
+.seasonal-offers-section .row {
+  align-items: center;
 }
 .seasonal-offers-section p {
-    font-size: 25px;
-      color: #939396;
+  font-size: 25px;
+  color: #939396;
 }
 .seasonal-offers-section h2 {
-    color: #939396;
-    font-size: 41px;
+  color: #939396;
+  font-size: 41px;
 }
 .content-left h2 {
   font-size: 32px;
@@ -771,7 +813,7 @@ font-size: 0.8rem;
   padding: 12px 20px;
   font-size: 16px;
   width: 280px;
-  font-family: 'Made Tommy Light';
+  font-family: "Made Tommy Light";
 }
 
 .input-wrap input::placeholder {
@@ -798,7 +840,6 @@ font-size: 0.8rem;
   background: linear-gradient(135deg, #cc0000 0%, #ff0000 100%);
 }
 
-
 .footer-section {
   background-color: #0b0b0b;
   color: #fff;
@@ -814,7 +855,7 @@ font-size: 0.8rem;
 }
 
 .footer-top-line::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: -10px;
@@ -824,9 +865,9 @@ font-size: 0.8rem;
   transform: skewX(-45deg);
 }
 .footer-grid {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: space-between;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
 }
 .footer-col h3 {
   font-size: 16px;
@@ -837,15 +878,15 @@ font-size: 0.8rem;
   display: inline-block;
 }
 .footer-logo.text-right {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .footer-logo.text-right img {
-    width: 180px;
+  width: 180px;
 }
 
 .footer-col h3::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -888,16 +929,12 @@ font-size: 0.8rem;
   margin: 0;
 }
 
-
-
-
 .booking-section {
-    background-color: #0d0d0d;
-    color: #fff;
-    padding: 100px 20px;
-    position: relative;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 100px 20px;
+  position: relative;
 }
-
 
 .booking-grid {
   display: grid;
@@ -971,7 +1008,7 @@ font-size: 0.8rem;
 }
 
 .datetime-row .filter-group {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .opt-btn {
@@ -1003,22 +1040,22 @@ font-size: 0.8rem;
 }
 
 .booking-card {
-    padding: 35px 30px;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
-    background-image: url(../images/form-bg.png);
-    margin-left: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 35px 30px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
+  background-image: url(../images/form-bg.png);
+  margin-left: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.booking-card .card-title{
-        text-align: center;
-    font-family: 'Race Sport';
+.booking-card .card-title {
+  text-align: center;
+  font-family: "Race Sport";
 }
 .booking-card button {
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
 }
 .card-title {
   font-size: 15px;
@@ -1037,8 +1074,8 @@ font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-   border-bottom: 1px solid #39393d;
-      padding: 24px 0;
+  border-bottom: 1px solid #39393d;
+  padding: 24px 0;
   font-size: 15px;
 }
 
@@ -1069,7 +1106,7 @@ font-size: 0.8rem;
   font-weight: 900;
   font-style: italic;
   letter-spacing: 1px;
-  font-family: 'Race Sport';
+  font-family: "Race Sport";
   color: #ababab;
 }
 
@@ -1100,8 +1137,6 @@ font-size: 0.8rem;
   font-size: 12px;
   margin-top: 15px;
 }
-
-
 
 .membership-section {
   background-color: #0b0b0b;
@@ -1137,7 +1172,7 @@ font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
-      color: #888;
+  color: #888;
 }
 
 .membership-header h2 .highlight {
@@ -1193,7 +1228,7 @@ font-size: 0.8rem;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
   transition: transform 0.3s ease;
-    background-image:url('../images/starter-racer.png');
+  background-image: url("../images/starter-racer.png");
 }
 
 .price-card:hover {
@@ -1204,7 +1239,7 @@ font-size: 0.8rem;
 .price-card.popular {
   padding-top: 50px;
   box-shadow: 0 0 30px rgba(204, 0, 0, 0.15);
-  background-image:url('../images/pro-racer-bg.png');
+  background-image: url("../images/pro-racer-bg.png");
 }
 
 .popular-badge {
@@ -1230,7 +1265,7 @@ font-size: 0.8rem;
 }
 
 .price-card:not(.popular) .card-top h3 {
- color: #888;
+  color: #888;
 }
 
 .price {
@@ -1241,7 +1276,7 @@ font-size: 0.8rem;
   margin-bottom: 30px;
   padding-bottom: 25px;
   border-bottom: 1px solid #222;
-  font-family: 'Race Sport';
+  font-family: "Race Sport";
   color: #888;
 }
 
@@ -1268,7 +1303,7 @@ font-size: 0.8rem;
 }
 
 .feature-list li::before {
-  content: '-';
+  content: "-";
   position: absolute;
   left: 0;
   color: #cc0000;
@@ -1290,7 +1325,7 @@ font-size: 0.8rem;
   cursor: pointer;
   transform: skewX(-10deg);
   transition: all 0.3s ease;
-      font-family: 'Race Sport';
+  font-family: "Race Sport";
 }
 
 .price-card.popular .join-btn {
@@ -1306,10 +1341,10 @@ font-size: 0.8rem;
 
 /* Footer Note */
 .membership-footer-note {
-    text-align: center;
-    margin-top: 30px;
-    display: inline-block;
-    width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
 }
 
 .membership-footer-note p {
@@ -1322,31 +1357,36 @@ font-size: 0.8rem;
   font-weight: bold;
 }
 
-
-
 .video-bg-container {
   width: 543px;
   height: 697px;
   position: relative;
   overflow: hidden;
-  
+
   /* Aapki background image yahan set hogi */
-  background-image: url('../images/video-bg.png');
+  background-image: url("../images/video-bg.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-bg-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 93%;
-    height: 93%;
-    object-fit: cover;
-    clip-path: polygon(47px 0%, 100% 0%, 100% calc(100% - 40px), calc(100% - 45px) 100%, 0% 100%, 0% 45px);
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 93%;
+  height: 93%;
+  object-fit: cover;
+  clip-path: polygon(
+    47px 0%,
+    100% 0%,
+    100% calc(100% - 40px),
+    calc(100% - 45px) 100%,
+    0% 100%,
+    0% 45px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .corporate-grid {
@@ -1376,9 +1416,8 @@ font-size: 0.8rem;
   margin-bottom: 20px;
   color: #080808;
 }
-.corporate-left h2 span{
-    
-    color: #ababab;
+.corporate-left h2 span {
+  color: #ababab;
 }
 
 .corporate-left p {
@@ -1397,7 +1436,7 @@ font-size: 0.8rem;
 }
 
 .stat-box .stat-num {
-  font-family: 'Race Sport';
+  font-family: "Race Sport";
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
@@ -1428,7 +1467,7 @@ font-size: 0.8rem;
   text-decoration: none;
   transform: skewX(-12deg);
   transition: all 0.3s ease;
-  font-family: 'Race Sport';
+  font-family: "Race Sport";
 }
 
 .proposal-btn:hover {
@@ -1448,37 +1487,40 @@ font-size: 0.8rem;
   max-width: 450px;
 }
 
-
-
-
 .custom-divider {
-      position: relative;
-    width: 0%;
-    height: 21px;
-    background-color: #6a0300;
-    overflow: hidden;
-    clip-path: polygon(24px 0%, 100% 0%, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0% 100%, 0% 24px);
-        margin-top: 20px;
+  position: relative;
+  width: 0%;
+  height: 21px;
+  background-color: #6a0300;
+  overflow: hidden;
+  clip-path: polygon(
+    24px 0%,
+    100% 0%,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0% 100%,
+    0% 24px
+  );
+  margin-top: 20px;
 }
 
 /* Upar aur neeche wali black lines */
-.custom-divider::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
-    z-index: 2;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.custom-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.why-torque-section .right-image-col{
-    text-align: right;
+.why-torque-section .right-image-col {
+  text-align: right;
 }
-
 
 .nav-link.link--split-color {
   position: relative;
@@ -1504,20 +1546,20 @@ font-size: 0.8rem;
 
 .hero-section {
   position: relative;
-     padding: 0 0 40px;
+  padding: 0 0 40px;
   color: #fff;
   font-family: sans-serif;
   overflow: hidden;
-      height: 100vh;
+  height: 100vh;
 }
-.hero-section .container-fluid{
-     position: absolute;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
-    width: calc(100% - 100px);
-        z-index: 2;
-    }
+.hero-section .container-fluid {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: calc(100% - 100px);
+  z-index: 2;
+}
 
 .hero-section .container {
   max-width: 1200px;
@@ -1589,14 +1631,14 @@ font-size: 0.8rem;
 }
 
 .btn-red {
-    background-color: #cc0000;
-    color: #fff;
-    padding: 16px 28px;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: background 0.3s;
-    font-family: 'Race Sport';
+  background-color: #cc0000;
+  color: #fff;
+  padding: 16px 28px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+  font-family: "Race Sport";
 }
 
 .btn-red:hover {
@@ -1604,7 +1646,7 @@ font-size: 0.8rem;
 }
 
 .btn-outline {
-   font-family: 'Race Sport';
+  font-family: "Race Sport";
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
@@ -1629,13 +1671,13 @@ font-size: 0.8rem;
   padding-top: 30px;
 }
 .stars-wrap {
-    display: flex;
+  display: flex;
 }
 .stat-item h4 {
   font-size: 22px;
   font-weight: 800;
   margin-bottom: 5px;
-      color: #939396;
+  color: #939396;
   font-style: italic;
 }
 
@@ -1652,318 +1694,319 @@ font-size: 0.8rem;
   margin-bottom: 2px;
 }
 
-
-
-
 .must-watch-section {
-        padding: 100px 0;
-    background: #0b0b0b;
-    border-top: 1px solid #222;
-    border-bottom: 1px solid #222;
+  padding: 100px 0;
+  background: #0b0b0b;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
 }
 
 /* Header Styling */
 .section-header-container {
-    margin: 0 auto 20px auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider-btn-wrap{
-   justify-content: flex-end;
+.slider-btn-wrap {
+  justify-content: flex-end;
 }
 .section-title {
-        font-size: 42px;
-    font-style: italic;
-    letter-spacing: 2px;
-    color: #fff;
-    font-weight: 800;
+  font-size: 42px;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 800;
 }
 
 .slider-controls {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .view-all {
-    font-size: 14px;
-    color: #ccc;
-    cursor: pointer;
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
 }
 .view-all:hover {
-    color: #ff1e1e;
+  color: #ff1e1e;
 }
 
-.custom-prev, .custom-next {
-    background: transparent;
-    border: 1px solid #333;
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-        justify-content: center;
-    border-radius: 4px;
+.custom-prev,
+.custom-next {
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
-.custom-prev:hover, .custom-next:hover {
-    border-color: #ff1e1e;
+.custom-prev:hover,
+.custom-next:hover {
+  border-color: #ff1e1e;
 }
 
 /* Right Align Overflow Container Magic */
 .must-watch-slider-wrapper {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end; /* Yeh section ko right side align karega */
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Yeh section ko right side align karega */
 }
 
 .must-watch-slider {
-   width: 85%;
+  width: 85%;
 }
 
 /* Card Design */
 .video-card {
-    padding: 0 10px; /* Slides ke darmiyan gap */
-    outline: none;
+  padding: 0 10px; /* Slides ke darmiyan gap */
+  outline: none;
 }
 
 .video-thumb {
-    position: relative;
-    display: block;
-    border-radius: 6px;
-    overflow: hidden;
-    aspect-ratio: 16/9;
-    border: 1px solid #222;
+  position: relative;
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  border: 1px solid #222;
 }
 
 .video-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .video-card:hover .video-thumb img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .play-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 28px;
-    height: 28px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .duration {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 11px;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-weight: 600;
-        color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .video-title {
-    font-size: 13px;
-    margin-top: 10px;
-    color: #ddd;
-    line-height: 1.4;
-    font-weight: 500;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #ddd;
+  line-height: 1.4;
+  font-weight: 500;
 }
 .video-title:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .section-header-container h2 .highlight {
-    color: #cc0000;
+  color: #cc0000;
 }
-.section-header-container h2{
-      color: #a0a0a0;
+.section-header-container h2 {
+  color: #a0a0a0;
 }
 
 .footer-logo {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .testimonial-section {
-    padding: 100px 0;
-    background-color: #0b0b0b;
-    color: #fff;
+  padding: 100px 0;
+  background-color: #0b0b0b;
+  color: #fff;
 }
 
 .testimonial-header .sub-title {
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #888;
-    display: block;
-    margin-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .testimonial-header .section-title {
-    font-size: 50px;
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
 .testimonial-header .section-title .highlight {
-    color: #ff1e1e;
+  color: #ff1e1e;
 }
 
 /* Slider Controls Styling */
 .testimonial-slider-controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-    margin-right: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
-.testi-prev, .testi-next {
-    background: transparent;
-    border: 1px solid #333;
-    color: #fff;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+.testi-prev,
+.testi-next {
+  background: transparent;
+  border: 1px solid #333;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.testi-prev:hover, .testi-next:hover {
-    border-color: #ff1e1e;
-    background: #ff1e1e;
+.testi-prev:hover,
+.testi-next:hover {
+  border-color: #ff1e1e;
+  background: #ff1e1e;
 }
 
 /* Testimonial Card Styling */
 .testimonial-card-wrap {
-    padding: 0 10px; /* Gap between slider items */
-    outline: none;
+  padding: 0 10px; /* Gap between slider items */
+  outline: none;
 }
 
 .testimonial-card {
-    background: #121212;
-    border: 1px solid #222;
-    border-radius: 8px;
-    padding: 30px;
-    position: relative;
-    transition: border-color 0.3s ease;
+  background: #121212;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+  transition: border-color 0.3s ease;
 }
 
 .testimonial-card:hover {
-    border-color: #444;
+  border-color: #444;
 }
 
 .stars {
-    color: #f39c12;
-    font-size: 14px;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
+  color: #f39c12;
+  font-size: 14px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
 .quote-icon {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    color: #222;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #222;
 }
 
 .review-text {
-    font-size: 13px;
-    color: #ccc;
-    line-height: 1.6;
-    font-style: italic;
-    margin-bottom: 25px;
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 25px;
 }
 
 .author-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border-top: 1px solid #222;
-    padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #222;
+  padding-top: 20px;
 }
 
 .author-info img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .author-info h4 {
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0 0 2px 0;
-    color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  color: #fff;
 }
 
 .author-info span {
-    font-size: 11px;
-    color: #888;
-    display: block;
+  font-size: 11px;
+  color: #888;
+  display: block;
 }
 
 .author-info .team-name {
-    font-size: 10px;
-    color: #ff1e1e;
-    margin: 0;
-    font-style: normal;
+  font-size: 10px;
+  color: #ff1e1e;
+  margin: 0;
+  font-style: normal;
 }
 
-.custom-toggler{
+.custom-toggler {
   display: none;
 }
 
-
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
-    .navbar-nav .nav-link {
-            font-size: 12px;
-    }
-    .book-race-btn{
-       font-size: 12px;
-    }
-    .navbar-brand img, .brand-text {
+  .navbar-nav .nav-link {
+    font-size: 12px;
+  }
+  .book-race-btn {
+    font-size: 12px;
+  }
+  .navbar-brand img,
+  .brand-text {
     max-width: 150px;
-}
-.navbar-custom {
+  }
+  .navbar-custom {
     margin: 0 0;
-}
-.hero-section .container-fluid {
+  }
+  .hero-section .container-fluid {
     left: 0;
-}
+  }
 }
 /* Responsive */
 @media (max-width: 992px) {
-  .custom-toggler{
-  display: block;
-}
+  .custom-toggler {
+    display: block;
+  }
   .hero-title {
     font-size: 28px;
   }
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-   padding-bottom: 100px;
+    padding-bottom: 100px;
   }
-        .booking-grid {
+  .booking-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -1976,11 +2019,11 @@ font-size: 0.8rem;
     max-width: 450px;
     margin: 0 auto 50px auto;
   }
-  
+
   .price-card.popular {
     transform: none;
   }
-  
+
   .membership-header h2 {
     font-size: 28px;
   }
@@ -1988,32 +2031,35 @@ font-size: 0.8rem;
     grid-template-columns: 1fr;
     gap: 50px;
   }
-  
+
   .corporate-left h2 {
     font-size: 32px;
   }
-   .seasonal-offers-section .container {
+  .seasonal-offers-section .container {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .subscribe-form {
     flex-direction: column;
     width: 100%;
   }
-  
-  .input-wrap, .input-wrap input, .subscribe-btn {
+
+  .input-wrap,
+  .input-wrap input,
+  .subscribe-btn {
     width: 100%;
     transform: none;
   }
 }
 
-
 @media (max-width: 767px) {
-  .hero-badges, .hero-desc, .hero-stats{
+  .hero-badges,
+  .hero-desc,
+  .hero-stats {
     display: none;
   }
-  
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -2031,28 +2077,27 @@ font-size: 0.8rem;
   .datetime-row {
     grid-template-columns: 1fr;
   }
-    .corporate-stats {
+  .corporate-stats {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .proposal-btn {
     width: 100%;
     text-align: center;
     transform: none;
   }
-    .stat-number {
-          font-size: 2.8rem;
-      }
-      .stat-box {
-          margin-bottom: 30px;
-      }
+  .stat-number {
+    font-size: 2.8rem;
+  }
+  .stat-box {
+    margin-bottom: 30px;
+  }
 
-.navbar-custom
- {
+  .navbar-custom {
     margin: 0 15px;
-}     
-.custom-toggler {
+  }
+  .custom-toggler {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -2063,10 +2108,10 @@ font-size: 0.8rem;
     height: 22px;
     padding: 0;
     z-index: 999;
-}
+  }
 
-/* Burger ki teeno lines ki common styling */
-.custom-toggler span {
+  /* Burger ki teeno lines ki common styling */
+  .custom-toggler span {
     display: block;
     width: 100%;
     height: 3px;
@@ -2074,185 +2119,194 @@ font-size: 0.8rem;
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
     transform-origin: center;
-}
+  }
 
-/* Jab button active/open ho jaye toh cross banane ki animation */
-.custom-toggler.active span:nth-child(1) {
+  /* Jab button active/open ho jaye toh cross banane ki animation */
+  .custom-toggler.active span:nth-child(1) {
     transform: translateY(9.5px) rotate(45deg);
-}
+  }
 
-.custom-toggler.active span:nth-child(2) {
+  .custom-toggler.active span:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
-}
+  }
 
-.custom-toggler.active span:nth-child(3) {
+  .custom-toggler.active span:nth-child(3) {
     transform: translateY(-9.5px) rotate(-45deg);
-}
-.hero-section .container-fluid {
+  }
+  .hero-section .container-fluid {
     position: absolute;
-            top: 60%;
+    top: 60%;
     left: 10px;
     transform: translateY(-50%);
     width: calc(100% - 10px);
-}
-header{
-  background-image: none;
-  height: auto;
-}
-.btn-outline, .btn-red {
-font-family: 'Race Sport';
-        background: transparent;
-        color: #fff;
-        border: 2px solid #fff;
-        font-weight: lighter;
-        text-decoration: none;
-        letter-spacing: 1px;
-        transition: all 0.3s;
-        font-size: 14px;
-        margin-bottom: 10px;
-        display: block;
-        text-align: center;
-             line-height: 40px;
-        padding-top: 0;
-        padding-bottom: 0;
-}
-.hero-section {
+  }
+  header {
+    background-image: none;
+    height: auto;
+  }
+  .btn-outline,
+  .btn-red {
+    font-family: "Race Sport";
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: lighter;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hero-section {
     height: 600px;
-}
+  }
 
-header video {
+  header video {
     display: block !important;
-     height: 600px;
-}
-.why-torque-section .card-wrapper
- {
+    height: 600px;
+  }
+  .why-torque-section .card-wrapper {
     margin-left: 0;
     margin-top: 50px;
-} 
-    .speed-slider h3 {
-        color: #680809;
-                font-size: 26px !important;
-         padding-top: 10px;
-         PADDING-LEFT: 30PX;
-    }
-.rotating-tyre {
+  }
+  .speed-slider h3 {
+    color: #680809;
+    font-size: 26px !important;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  .rotating-tyre {
     width: 50px;
     height: 50px;
-            margin-left: 20px;
-}
-.booking-card {
+    margin-left: 20px;
+  }
+  .booking-card {
     margin-top: 50px;
     margin-left: 0;
-}
-.total-price {
-    font-size: 22px;}
+  }
+  .total-price {
+    font-size: 22px;
+  }
 
-
-    .footer-grid {
+  .footer-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Default: Har row mein 2 columns aayenge */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Default: Har row mein 2 columns aayenge */
     gap: 30px; /* Columns ke darmiyan fasla */
     background-color: #0b0b0b; /* Apni theme ke mutabiq color rakh lein */
     padding: 40px 20px;
     color: #fff;
-}
+  }
 
-/* Har individual footer column ki styling */
-.footer-col {
+  /* Har individual footer column ki styling */
+  .footer-col {
     margin-bottom: 20px;
-}
+  }
 
-.footer-col h3 {
+  .footer-col h3 {
     font-size: 16px !important;
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: 1px;
     color: #fff;
-}
+  }
 
-.footer-col ul {
+  .footer-col ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+  }
 
-.footer-col ul li {
+  .footer-col ul li {
     margin-bottom: 10px;
-}
+  }
 
-.footer-col ul li a {
+  .footer-col ul li a {
     color: #aaa;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
-}
+  }
 
-.footer-col ul li a:hover {
+  .footer-col ul li a:hover {
     color: #ff1e1e; /* Hover color */
-}
+  }
 
-/* Aakhri column (CONNECT) ko 100% width (puri row) par karne ke liye */
-.footer-grid .footer-col:last-child {
+  /* Aakhri column (CONNECT) ko 100% width (puri row) par karne ke liye */
+  .footer-grid .footer-col:last-child {
     grid-column: 1 / -1; /* Yeh pehle column se shuru ho kar aakhri column tak phail jaye ga */
     border-top: 1px solid #222; /* Optional: Upar halki line dene ke liye */
     padding-top: 20px;
-}
-iframe {
+  }
+  iframe {
     border: 0;
     width: 100%;
-}
-h2, h3{
-         font-size: 25px !important;
-}
-.video-title {
-    font-size: 13px !important;}
+  }
+  h2,
+  h3 {
+    font-size: 25px !important;
+  }
+  .video-title {
+    font-size: 13px !important;
+  }
 
- .speed-slider {
+  .speed-slider {
     padding: 0 0 50px 0;
-}
-.booking-section {
+  }
+  .booking-section {
     padding: 50px 20px;
-}   
-.corporate-right {
+  }
+  .corporate-right {
     display: none;
-}
-.hero-subtitle {
-    font-size: 18px !important;}
-    br{
-      display: none !important;
-    }
-.seasonal-offers-section p {
+  }
+  .hero-subtitle {
+    font-size: 18px !important;
+  }
+  br {
+    display: none !important;
+  }
+  .seasonal-offers-section p {
     margin-bottom: 20px;
     font-size: 16px;
-}
-header, section, footer {
+  }
+  header,
+  section,
+  footer {
     overflow-x: hidden !important;
-}
-.summary-item .label {
+  }
+  .summary-item .label {
     margin-right: 120px;
-}
-video{
-  display: none !important;
-}
-.why-torque-section .right-image-col {
+  }
+  video {
+    display: none !important;
+  }
+  .why-torque-section .right-image-col {
     display: none;
-}
-.custom-divider {
+  }
+  .custom-divider {
     margin-top: 60px;
-}
-.services-section {
+  }
+  .services-section {
     padding: 40px 0;
-}
-.ad-banner {
+  }
+  .ad-banner {
     background: #080808;
     padding-top: 0;
     margin-bottom: 30px;
-}
-.hero-buttons {
-    display: block;}
+  }
+  .hero-buttons {
+    display: block;
+  }
 
-.navbar-collapse {
+  .navbar-collapse {
     position: absolute;
     top: 80px;
     background: #000;
@@ -2261,17 +2315,17 @@ video{
     left: 0;
     right: 0;
     margin: auto;
-}
-.stats-section {
+  }
+  .stats-section {
     padding: 40px 0 0 0;
-}
-.why-torque-section {
+  }
+  .why-torque-section {
     padding: 40px 0;
-}
-.footer-logo img {
+  }
+  .footer-logo img {
     width: 50%;
-}
-.navbar-brand img{
+  }
+  .navbar-brand img {
     width: 240px;
-}
+  }
 }
