@@ -2236,4 +2236,16 @@ video{
 }
 .hero-buttons {
     display: block;}
+
+.navbar-collapse {
+    position: absolute;
+    top: 80px;
+    background: #000;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 }
