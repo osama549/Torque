@@ -2328,4 +2328,8 @@ img.img-fluid.home-banner {
   .navbar-brand img {
     width: 240px;
   }
+  .services-slider {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 }

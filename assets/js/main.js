@@ -602,4 +602,35 @@ $('.testimonial-slider').slick({
         $(this).toggleClass('active');
         $('.navbar-collapse').toggleClass('show');
     });
+
+    function initServicesSlider() {
+        if ($(window).width() <= 767) {
+            if (!$('.services-slider').hasClass('slick-initialized')) {
+                $('.services-slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    pauseOnHover: true,   // Mouse hover par rokne ke liye
+                    pauseOnFocus: true,   // Focus par rokne ke liye
+                    pauseOnDotsHover: true
+                });
+            }
+        } else {
+            if ($('.services-slider').hasClass('slick-initialized')) {
+                $('.services-slider').slick('unslick');
+            }
+        }
+    }
+
+    // Initialize on load
+    initServicesSlider();
+
+    // Re-initialize on window resize
+    $(window).resize(function() {
+        initServicesSlider();
+    });
 });
