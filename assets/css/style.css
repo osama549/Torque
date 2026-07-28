@@ -2134,6 +2134,7 @@ header video {
         color: #680809;
                 font-size: 26px !important;
          padding-top: 10px;
+         PADDING-LEFT: 30PX;
     }
 .rotating-tyre {
     width: 50px;
