@@ -2228,7 +2228,7 @@ video{
     margin-top: 60px;
 }
 .services-section {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 .ad-banner {
     background: #080808;
@@ -2248,5 +2248,13 @@ video{
     right: 0;
     margin: auto;
 }
-
+.stats-section {
+    padding: 40px 0 0 0;
+}
+.why-torque-section {
+    padding: 40px 0;
+}
+.footer-logo img {
+    width: 50%;
+}
 }
