@@ -2257,4 +2257,7 @@ video{
 .footer-logo img {
     width: 50%;
 }
+.navbar-brand img{
+    width: 240px;
+}
 }
