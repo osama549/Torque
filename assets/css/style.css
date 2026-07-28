@@ -1516,6 +1516,7 @@ font-size: 0.8rem;
     left: 50px;
     transform: translateY(-50%);
     width: calc(100% - 100px);
+        z-index: 2;
     }
 
 .hero-section .container {
