@@ -619,6 +619,9 @@ $('.testimonial-slider').slick({
                     pauseOnDotsHover: true
                 });
             }
+            $('.services-slider').on('touchstart', function() {
+                $(this).slick('slickPause');
+            });
         } else {
             if ($('.services-slider').hasClass('slick-initialized')) {
                 $('.services-slider').slick('unslick');
