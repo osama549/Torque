@@ -535,7 +535,7 @@ img.img-fluid.home-banner {
 }
 
 .speed-slider h3 {
-  color: #680809;
+  color: #e62e2e;
   font-size: 146px;
   white-space: nowrap;
 }
@@ -1029,8 +1029,8 @@ img.img-fluid.home-banner {
 }
 
 .opt-btn.active {
-  background-color: #7b1314;
-  border-color: #7b1314;
+ background-color: #e62e2e;
+    border-color: #e62e2e;
   color: #fff;
 }
 
@@ -1491,7 +1491,7 @@ img.img-fluid.home-banner {
   position: relative;
   width: 0%;
   height: 21px;
-  background-color: #6a0300;
+  background-color: #e62e2e;
   overflow: hidden;
   clip-path: polygon(
     24px 0%,
@@ -2165,19 +2165,19 @@ img.img-fluid.home-banner {
     padding-bottom: 0;
   }
   .hero-section {
-    height: 600px;
+    height: 400px;
   }
 
   header video {
     display: block !important;
-    height: 600px;
+    height: 400px;
   }
   .why-torque-section .card-wrapper {
     margin-left: 0;
     margin-top: 50px;
   }
   .speed-slider h3 {
-    color: #680809;
+        
     font-size: 26px !important;
     padding-top: 10px;
     padding-left: 30px;
