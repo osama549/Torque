@@ -610,8 +610,10 @@ $('.testimonial-slider').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    arrows: false,
-                    dots: true,
+                    arrows: true,
+                    prevArrow: $('.custom-prevs'),
+                    nextArrow: $('.custom-nexts'),
+                    dots: false,
                     autoplay: true,
                     autoplaySpeed: 3000,
                     pauseOnHover: true,   // Mouse hover par rokne ke liye
