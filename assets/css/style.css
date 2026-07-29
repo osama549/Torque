@@ -99,6 +99,9 @@ p {
   text-transform: uppercase;
   font-weight: 600;
 }
+.services-section .slider-controls {
+    display: none;
+}
 .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: 600;
@@ -2351,5 +2354,8 @@ img.img-fluid.home-banner {
 }
 .membership-section{
   padding-top:0
+}
+.services-section .slider-controls {
+            display: flex;
 }
 }
