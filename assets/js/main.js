@@ -36,7 +36,6 @@ gsap.set([
     ".must-watch-section .video-card",
     ".testimonial-header",
     ".testimonial-slider-controls",
-    ".testimonial-card-wrap",
     ".seasonal-offers-section h2",
     ".seasonal-offers-section p",
     ".seasonal-offers-section .subscribe-form",
@@ -408,7 +407,7 @@ const testimonialTl = gsap.timeline({
 });
 
 testimonialTl.add(() => {
-    gsap.set(".testimonial-header, .testimonial-slider-controls, .testimonial-card-wrap", { visibility: "visible" });
+    gsap.set(".testimonial-header, .testimonial-slider-controls, ", { visibility: "visible" });
 })
 .fromTo(".testimonial-header", 
     { y: -30, autoAlpha: 0 },
@@ -419,11 +418,7 @@ testimonialTl.add(() => {
     { x: 0, autoAlpha: 1, duration: 0.6, ease: "power3.out" },
     "-=0.4"
 )
-.fromTo(".testimonial-card-wrap", 
-    { y: 40, autoAlpha: 0 },
-    { y: 0, autoAlpha: 1, duration: 0.7, stagger: 0.15, ease: "power3.out" },
-    "-=0.3"
-);
+
 
 
 // ==========================================
@@ -574,30 +569,35 @@ footerTl.add(() => {
        
     });
 
-
 $('.testimonial-slider').slick({
-        infinite: true,
-        slidesToShow: 3,        // Desktop view mein 3 cards aik sath dikhenge
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: $('.testi-prev'),
-        nextArrow: $('.testi-next'),
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 992, // Tablet view
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 768, // Mobile view
-                settings: {
-                    slidesToShow: 1
-                }
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.testi-prev'),
+    nextArrow: $('.testi-next'),
+    dots: false,
+    speed: 600,
+    cssEase: 'ease',
+    centerMode: false,
+
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
-        ]
-    });
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
     $('#menuToggle').on('click', function() {
         $(this).toggleClass('active');
         $('.navbar-collapse').toggleClass('show');

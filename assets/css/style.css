@@ -2359,3 +2359,24 @@ img.img-fluid.home-banner {
             display: flex;
 }
 }
+
+
+/* Slider ki parent class ko overflow hidden rakhein taake extra slides bahar na niklein */
+.testimonial-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Har slide (card wrapper) ki width ko flex aur box-sizing se fix karein */
+.testimonial-slider .testimonial-card-wrap {
+    float: left;
+    height: 100%;
+    padding: 0 12px; /* Cards ke darmiyan gap */
+    box-sizing: border-box;
+}
+
+/* Slick list ki margin fix karna taake alignment theek rahay */
+.testimonial-slider .slick-list {
+    margin: 0 -12px;
+    overflow: hidden;
+}
