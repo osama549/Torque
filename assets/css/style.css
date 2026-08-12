@@ -61,8 +61,11 @@ h6 {
 
 /* Top Announcement Bar */
 .top-announcement-bar {
-  background-color: #111;
+  
   border-bottom: 1px solid #222;
+
+  background-image: url('../images/top-bar.webp');
+  background-size: 100% 100%;
 
   padding: 6px 0;
   text-align: center;
@@ -228,18 +231,21 @@ p {
   width: max-content;
   justify-content: center;
   align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
 }
 .book-race-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(200, 0, 0, 0.5);
 }
 header {
-  background-image: url(../images/banner-image.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden;
 }
+
+
 header video {
   position: absolute;
   width: 100%;
@@ -300,6 +306,16 @@ img.img-fluid.home-banner {
   padding: 80px 0;
   position: relative;
 }
+.why-torque-section.ser-detail .section-heading-2, .why-torque-section.ser-detail .section-heading-1 {
+  font-size: 2rem;
+}
+
+.why-torque-section.ser-detail .lead, .why-torque-section.ser-detail ol li{
+  color: #b1b1b1;
+  font-size: 1.25rem;
+  font-family: "Made Tommy Light";      
+}
+
 
 /* Section Subtitle & Headings */
 .section-subtitle {
@@ -1554,6 +1570,9 @@ img.img-fluid.home-banner {
   overflow: hidden;
   height: 100vh;
 }
+.inner-header, .inner-hero{
+  height: auto;
+}
 .hero-section .container-fluid {
   position: absolute;
   top: 50%;
@@ -1562,7 +1581,14 @@ img.img-fluid.home-banner {
   width: calc(100% - 100px);
   z-index: 2;
 }
-
+.inner-hero .container-fluid {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: auto;
+    padding: 0;
+}
 .hero-section .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -2057,6 +2083,17 @@ img.img-fluid.home-banner {
 }
 
 @media (max-width: 767px) {
+  .hero-section.inner-hero .container-fluid {
+    position: relative;
+    top: 0%;
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
+    .hero-section.inner-hero img{
+      height: 400px;
+      object-fit: cover;
+    }
   .hero-badges,
   .hero-desc,
   .hero-stats {

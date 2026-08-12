@@ -598,6 +598,7 @@ $('.testimonial-slider').slick({
         }
     ]
 });
+
     $('#menuToggle').on('click', function() {
         $(this).toggleClass('active');
         $('.navbar-collapse').toggleClass('show');
