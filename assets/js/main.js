@@ -56,38 +56,38 @@ const masterTl = gsap.timeline({
     }
 });
 
-const statsTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".stats-section",
-        start: "top 80%",
-        toggleActions: "play reverse play reverse"
-    }
-});
+if ($(".stats-section").length) {
+        const statsTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".stats-section",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            }
+        });
 
-statsTl.add(() => {
-    // Section aur andar ke elements ko visible karna
-    gsap.set(".stats-section", { visibility: "visible" });
-    gsap.set(".stats-section .stat-box", { visibility: "visible" });
-})
-.fromTo(".stats-section", 
-    { y: 40, autoAlpha: 0 },
-    { y: 0, autoAlpha: 1, duration: 0.8, ease: "power3.out" }
-)
-.fromTo(".stats-section .stat-box", 
-    { y: 30, autoAlpha: 0 },
-    { 
-        y: 0, 
-        autoAlpha: 1, 
-        duration: 0.7, 
-        stagger: 0.15, 
-        ease: "power2.out",
-        onComplete: function() {
-            // Jab boxes ki animation complete ho jaye, tab counters trigger honge
-            triggerStatsCounters();
-        }
-    },
-    "-=0.4"
-);
+        statsTl.add(() => {
+            gsap.set(".stats-section", { visibility: "visible" });
+            gsap.set(".stats-section .stat-box", { visibility: "visible" });
+        })
+        .fromTo(".stats-section", 
+            { y: 40, autoAlpha: 0 },
+            { y: 0, autoAlpha: 1, duration: 0.8, ease: "power3.out" }
+        )
+        .fromTo(".stats-section .stat-box", 
+            { y: 30, autoAlpha: 0 },
+            { 
+                y: 0, 
+                autoAlpha: 1, 
+                duration: 0.7, 
+                stagger: 0.15, 
+                ease: "power2.out",
+                onComplete: function() {
+                    triggerStatsCounters();
+                }
+            },
+            "-=0.4"
+        );
+    
 
 // Counter Function for Stats Section
 function triggerStatsCounters() {
@@ -111,6 +111,7 @@ function triggerStatsCounters() {
             }
         });
     });
+}
 }
 
 masterTl.to(".page-loader", {
@@ -140,6 +141,7 @@ masterTl.to(".page-loader", {
 });
 
 // Hero Content Animation
+if ($(".hero-badges").length || $(".hero-title").length) {
 const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
 heroTl.fromTo(".hero-badges", { y: -30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, delay: 1 })
       .fromTo(".hero-title", { y: 50, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1 }, "-=0.4")
@@ -148,7 +150,7 @@ heroTl.fromTo(".hero-badges", { y: -30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, du
       .fromTo(".hero-buttons", { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.8 }, "-=0.6")
       .fromTo(".hero-stats .stat-item", { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.8, stagger: 0.15 }, "-=0.4");
 
-
+}
 // ==========================================
 // COUNTER ANIMATION
 // ==========================================
@@ -177,6 +179,7 @@ $(".counter").each(function () {
 // ==========================================
 // WHY TORQUE ANIMATION
 // ==========================================
+
 const whyTl = gsap.timeline({
     scrollTrigger: {
         trigger: ".why-torque-section",
@@ -186,33 +189,50 @@ const whyTl = gsap.timeline({
     defaults: { ease: "power3.out" }
 });
 
-whyTl.add(() => {
-    gsap.set(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2, .why-torque-section .feature-item, .why-torque-section .book-race-btn, .why-torque-section .right-image-col", { visibility: "visible" });
-})
-.fromTo(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2",
-    { x: -50, autoAlpha: 0 },
-    { x: 0, autoAlpha: 1, duration: 0.8, stagger: 0.2 }
-)
-.fromTo(".why-torque-section .feature-item",
-    { y: 30, autoAlpha: 0 },
-    { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.1 },
-    "-=0.4"
-)
-.fromTo(".why-torque-section .book-race-btn",
-    { y: 20, autoAlpha: 0 },
-    { y: 0, autoAlpha: 1, duration: 0.5 },
-    "-=0.3"
-)
-.fromTo(".why-torque-section .right-image-col",
-    { scale: 0.9, autoAlpha: 0 },
-    { scale: 1, autoAlpha: 1, duration: 1 },
-    "-=0.8"
-);
+if ($(".why-torque-section").length) {
+        
+        const whyTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".why-torque-section",
+                start: "top 80%",
+                toggleActions: "play reverse play reverse"
+            },
+            defaults: { ease: "power3.out" }
+        });
 
+        whyTl.add(() => {
+            gsap.set(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2, .why-torque-section .feature-item, .why-torque-section .book-race-btn, .why-torque-section .right-image-col", { visibility: "visible" });
+        })
+        .fromTo(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2",
+            { x: -50, autoAlpha: 0 },
+            { x: 0, autoAlpha: 1, duration: 0.8, stagger: 0.2 }
+        )
+        .fromTo(".why-torque-section .feature-item",
+            { y: 30, autoAlpha: 0 },
+            { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.1 },
+            "-=0.4"
+        );
+
+        // Sirf .book-race-btn par condition (Agar element maujud hai tabhi animation add hogi)
+        if ($(".why-torque-section .book-race-btn").length) {
+            whyTl.fromTo(".why-torque-section .book-race-btn",
+                { y: 20, autoAlpha: 0 },
+                { y: 0, autoAlpha: 1, duration: 0.5 },
+                "-=0.3"
+            );
+        }
+
+        whyTl.fromTo(".why-torque-section .right-image-col",
+            { scale: 0.9, autoAlpha: 0 },
+            { scale: 1, autoAlpha: 1, duration: 1 },
+            "-=0.8"
+        );
+    }
 
 // ==========================================
 // SPEED SLIDER WRAP
 // ==========================================
+if ($(".speed-slider-wrap").length) {
 gsap.fromTo(".speed-slider-wrap", 
     { y: 50, autoAlpha: 0 },
     {
@@ -227,11 +247,12 @@ gsap.fromTo(".speed-slider-wrap",
         }
     }
 );
-
+}
 
 // ==========================================
 // SERVICES SECTION ("SEVEN WAYS") ANIMATION
 // ==========================================
+if ($(".services-section").length) {
 const servicesTl = gsap.timeline({
     scrollTrigger: {
         trigger: ".services-section",
@@ -253,10 +274,11 @@ servicesTl.add(() => {
     "-=0.3"
 );
 
-
+}
 // ==========================================
 // AD BANNER ANIMATION
 // ==========================================
+if ($(".ad-banner").length) {
 gsap.fromTo(".ad-banner", 
     { scale: 0.9, autoAlpha: 0 },
     {
@@ -271,11 +293,12 @@ gsap.fromTo(".ad-banner",
         }
     }
 );
-
+}
 
 // ==========================================
 // BOOKING SECTION
 // ==========================================
+if ($(".booking-section").length) {
 gsap.utils.toArray(".booking-section").forEach((section) => {
     const bookingTl = gsap.timeline({
         scrollTrigger: {
@@ -304,11 +327,12 @@ gsap.utils.toArray(".booking-section").forEach((section) => {
         "-=0.8"
     );
 });
-
+}
 
 // ==========================================
 // MEMBERSHIP & PRICING SECTION
 // ==========================================
+if ($(".membership-section").length) {
 const membershipTl = gsap.timeline({
     scrollTrigger: {
         trigger: ".membership-section",
@@ -334,11 +358,12 @@ membershipTl.add(() => {
     { y: 0, autoAlpha: 1, duration: 0.8, ease: "power2.out" },
     "-=0.4"
 );
-
+}
 
 // ==========================================
 // CUSTOM DIVIDERS
 // ==========================================
+if ($(".custom-divider").length) {
 gsap.utils.toArray(".custom-divider").forEach((divider) => {
     gsap.fromTo(divider, 
         { width: "0%", autoAlpha: 0 },
@@ -355,11 +380,12 @@ gsap.utils.toArray(".custom-divider").forEach((divider) => {
         }
     );
 });
-
+}
 
 // ==========================================
 // MUST WATCH SECTION
 // ==========================================
+if ($(".must-watch-section").length) {
 gsap.utils.toArray(".must-watch-section").forEach((section) => {
     const watchTl = gsap.timeline({
         scrollTrigger: {
@@ -393,11 +419,12 @@ gsap.utils.toArray(".must-watch-section").forEach((section) => {
         "-=0.6"
     );
 });
-
+}
 
 // ==========================================
 // TESTIMONIAL SECTION
 // ==========================================
+if ($(".testimonial-section").length) {
 const testimonialTl = gsap.timeline({
     scrollTrigger: {
         trigger: ".testimonial-section",
@@ -419,11 +446,12 @@ testimonialTl.add(() => {
     "-=0.4"
 )
 
-
+}
 
 // ==========================================
 // SEASONAL OFFERS SECTION
 // ==========================================
+if ($(".seasonal-offers-section").length) {
 const seasonalTl = gsap.timeline({
     scrollTrigger: {
         trigger: ".seasonal-offers-section",
@@ -449,7 +477,7 @@ seasonalTl.add(() => {
     { scale: 1, autoAlpha: 1, duration: 0.8, ease: "power3.out" },
     "-=0.5"
 );
-
+}
 
 // ==========================================
 // FOOTER SECTION
