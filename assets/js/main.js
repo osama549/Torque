@@ -190,44 +190,109 @@ const whyTl = gsap.timeline({
 });
 
 if ($(".why-torque-section").length) {
-        
-        const whyTl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".why-torque-section",
-                start: "top 80%",
-                toggleActions: "play reverse play reverse"
-            },
-            defaults: { ease: "power3.out" }
-        });
 
-        whyTl.add(() => {
-            gsap.set(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2, .why-torque-section .feature-item, .why-torque-section .book-race-btn, .why-torque-section .right-image-col", { visibility: "visible" });
-        })
-        .fromTo(".why-torque-section .section-subtitle, .why-torque-section .section-heading-1, .why-torque-section .section-heading-2",
-            { x: -50, autoAlpha: 0 },
-            { x: 0, autoAlpha: 1, duration: 0.8, stagger: 0.2 }
-        )
-        .fromTo(".why-torque-section .feature-item",
-            { y: 30, autoAlpha: 0 },
-            { y: 0, autoAlpha: 1, duration: 0.6, stagger: 0.1 },
+    const section = $(".why-torque-section");
+
+    const subtitle = section.find(".section-subtitle");
+    const heading1 = section.find(".section-heading-1");
+    const heading2 = section.find(".section-heading-2");
+    const features = section.find(".feature-item");
+    const bookBtn = section.find(".book-race-btn");
+    const rightImage = section.find(".right-image-col");
+
+    const whyTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: section[0],
+            start: "top 80%",
+            toggleActions: "play reverse play reverse"
+        },
+        defaults: {
+            ease: "power3.out"
+        }
+    });
+
+    // Only existing elements ko visible karo
+    const visibleElements = section.find(
+        ".section-subtitle, .section-heading-1, .section-heading-2, .feature-item, .book-race-btn, .right-image-col"
+    );
+
+    if (visibleElements.length) {
+        gsap.set(visibleElements, {
+            visibility: "visible"
+        });
+    }
+
+    // Headings animation
+    const headings = subtitle.add(heading1).add(heading2);
+
+    if (headings.length) {
+        whyTl.fromTo(
+            headings,
+            {
+                x: -50,
+                autoAlpha: 0
+            },
+            {
+                x: 0,
+                autoAlpha: 1,
+                duration: 0.8,
+                stagger: 0.2
+            }
+        );
+    }
+
+    // Features animation
+    if (features.length) {
+        whyTl.fromTo(
+            features,
+            {
+                y: 30,
+                autoAlpha: 0
+            },
+            {
+                y: 0,
+                autoAlpha: 1,
+                duration: 0.6,
+                stagger: 0.1
+            },
             "-=0.4"
         );
+    }
 
-        // Sirf .book-race-btn par condition (Agar element maujud hai tabhi animation add hogi)
-        if ($(".why-torque-section .book-race-btn").length) {
-            whyTl.fromTo(".why-torque-section .book-race-btn",
-                { y: 20, autoAlpha: 0 },
-                { y: 0, autoAlpha: 1, duration: 0.5 },
-                "-=0.3"
-            );
-        }
+    // Book button - optional
+    if (bookBtn.length) {
+        whyTl.fromTo(
+            bookBtn,
+            {
+                y: 20,
+                autoAlpha: 0
+            },
+            {
+                y: 0,
+                autoAlpha: 1,
+                duration: 0.5
+            },
+            "-=0.3"
+        );
+    }
 
-        whyTl.fromTo(".why-torque-section .right-image-col",
-            { scale: 0.9, autoAlpha: 0 },
-            { scale: 1, autoAlpha: 1, duration: 1 },
+    // Right image - optional
+    if (rightImage.length) {
+        whyTl.fromTo(
+            rightImage,
+            {
+                scale: 0.9,
+                autoAlpha: 0
+            },
+            {
+                scale: 1,
+                autoAlpha: 1,
+                duration: 1
+            },
             "-=0.8"
         );
     }
+}
 
 // ==========================================
 // SPEED SLIDER WRAP
@@ -512,29 +577,31 @@ footerTl.add(() => {
 
 
 
-    // Generic click handler for option buttons inside groups
-  $("#service-options, #package-options, #date-options, #time-options").on("click", ".opt-btn", function() {
+ $("#service-options, #package-options, #date-options, #time-options").on("click", ".opt-btn", function() {
     const $btn = $(this);
     const $parentGroup = $btn.parent();
     
-    // Toggle active class within the group
     $parentGroup.find(".opt-btn").removeClass("active");
     $btn.addClass("active");
     
-    // Update summary values based on selection
+    const val = $btn.data("value");
+
     if ($parentGroup.attr("id") === "service-options") {
-      $("#sum-service").text($btn.data("value"));
+      $("#sum-service").text(val);
+      $("#input-service").val(val);
     } else if ($parentGroup.attr("id") === "package-options") {
-      $("#sum-package").text($btn.data("value"));
+      $("#sum-package").text(val);
+      $("#input-package").val(val);
       
-      // Update dynamic pricing
       const price = parseInt($btn.data("price")) || 0;
-      const formattedPrice = "RS. " + price.toLocaleString("en-US");
-      $("#sum-total").text(formattedPrice);
+      $("#sum-total").text("RS. " + price.toLocaleString("en-US"));
+      $("#input-total").val(price);
     } else if ($parentGroup.attr("id") === "date-options") {
-      $("#sum-date").text($btn.data("value"));
+      $("#sum-date").text(val);
+      $("#input-date").val(val);
     } else if ($parentGroup.attr("id") === "time-options") {
-      $("#sum-time").text($btn.data("value"));
+      $("#sum-time").text(val);
+      $("#input-time").val(val);
     }
   });
 

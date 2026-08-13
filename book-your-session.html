@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Racing Academy  - Torque-X Karting Circuit</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+      <!-- Bootstrap 5 CSS CDN -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      />
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+      />
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <style></style>
+   </head>
+   <body>
+      <div class="page-loader">
+         <div class="loader-content">
+            <h2 class="loader-logo">TORQUE X</h2>
+            <div class="loader-bar"></div>
+         </div>
+      </div>
+      <header class="inner-header">
+         <!-- Top Announcement Bar -->
+         <div class="top-announcement-bar">
+            <p>
+               SEASON OPENER - 20% OFF ALL RACE PACKAGES & FREE GEAR HIRE UNTIL
+               JUNE 30. USE CODE GRID26.
+            </p>
+         </div>
+
+         <!-- Main Navigation -->
+         <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+               <!-- Brand Logo -->
+               <a class="navbar-brand d-flex flex-column" href="#">
+                  <img
+                     src="assets/images/logo.webp"
+                     alt="logo"
+                     class="img-fluid"
+                  />
+               </a>
+
+               <!-- Mobile Toggle Button -->
+               <button class="custom-toggler" type="button" id="menuToggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </button>
+
+               <!-- Nav Links -->
+               <div
+                  class="collapse navbar-collapse justify-content-center"
+                  id="navbarNav"
+               >
+                  <ul class="navbar-nav align-items-center">
+                     <li class="nav-item">
+                        <a class="nav-link link--split-color" href="#"
+                           >Services</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link--split-color" href="#">Book</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link--split-color" href="#"
+                           >Membership</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link--split-color" href="#"
+                           >Corporate</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link link--split-color" href="#"
+                           >Contact</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- Right Actions -->
+               <div class="d-none d-lg-flex align-items-center">
+                  <a
+                     href="#"
+                     class="nav-link text-uppercase text-light me-4"
+                     style="font-size: 13px; letter-spacing: 1px"
+                     >Members</a
+                  >
+                  <a href="#" class="book-race-btn"
+                     ><span>BOOK YOUR RACE</span></a
+                  >
+               </div>
+            </div>
+         </nav>
+
+         <!-- Hero Section with Beveled Container -->
+
+         <section class="hero-section inner-hero">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <img src="assets/images/contact-banner-img.webp" class="img-fluid" alt="">
+                  </div>
+               </div>
+            </div>
+         </section>
+      </header>
+ 
+
+      <!-- Why Torque X Section -->
+      <section class="why-torque-section ser-detail">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-end d-none d-md-block">
+                  <img src="assets/images/inner-pattern.webp" alt="">
+               </div>
+               <div class="col-md-12 mb-5">
+                  <div class="custom-divider"></div>
+               </div> 
+              <div class="col-md-12 mb-5 d-none d-md-block">
+                  <img src="assets/images/inner-pattern.webp" alt="">
+               </div>
+           
+               <!-- Left Content Column -->
+              
+
+            </div>
+
+         </div>
+         
+      </section>
+<section class="booking-section pt-0">
+         <div class="container">
+        
+            <div class="row align-items-center">
+               <div class="col-md-12">
+                  <div class="booking-left">
+                     <div class="section-header">
+                        <span class="sub-title">BOOK IN 3 CLICKS</span>
+                        <h2>
+                           THREE STEPS. THEN YOU'RE<br/>
+                           <span class="highlight">ON THE GRID</span>
+                        </h2>
+                     </div>
+
+                     <div class="summary-item">
+                        <span class="label">1. CHOOSE YOUR EXPERIENCE</span>
+                        <span class="value" id="sum-service">Select the racing session or event that suits you.</span>
+                     </div>
+                     <div class="summary-item">
+                        <span class="label">2. CHOOSE YOUR TIME</span>
+                        <span class="value" id="sum-service">Pick an available date and session time.</span>
+                     </div>
+                     <div class="summary-item">
+                        <span class="label">3. CONFIRM YOUR BOOKING </span>
+                        <span class="value" id="sum-service">Enter your details, complete payment where applicable & receive your booking confirmation.</span>
+                     </div>      
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<section class="booking-section">
+   <div class="container">
+      <div class="row align-items-center">
+         <!-- Left Side: Interactive Selection Controls -->
+         <div class="col-md-6">
+            <div class="booking-left">
+               <div class="section-header">
+                  <h2>
+                     <span class="highlight">BOOK YOUR SESSION</span>
+                  </h2>
+                  <p>
+                     Pick a service, choose your slot, and pay online.
+                     Instant confirmation to your phone.
+                  </p>
+               </div>
+
+               <!-- Service Selection -->
+               <div class="filter-group">
+                  <label>SERVICE</label>
+                  <div class="options-row" id="service-options">
+                     <button type="button" class="opt-btn active" data-value="Arrive & Drive">Arrive & Drive</button>
+                     <button type="button" class="opt-btn" data-value="Professional Racing">Professional Racing</button>
+                     <button type="button" class="opt-btn" data-value="Corporate Event">Corporate Event</button>
+                     <button type="button" class="opt-btn" data-value="Private Track Rental">Private Track Rental</button>
+                     <button type="button" class="opt-btn" data-value="Racing Academy">Racing Academy</button>
+                  </div>
+               </div>
+
+               <!-- Package Selection -->
+               <div class="filter-group">
+                  <label>PACKAGE</label>
+                  <div class="options-row" id="package-options">
+                     <button type="button" class="opt-btn active" data-value="10 Laps" data-price="2500">10 Laps - Rs. 2,500</button>
+                     <button type="button" class="opt-btn" data-value="20 Laps" data-price="4500">20 Laps - Rs. 4,500</button>
+                     <button type="button" class="opt-btn" data-value="Endurance 45min" data-price="8000">Endurance 45min - Rs. 8,000</button>
+                  </div>
+               </div>
+
+               <!-- Date & Time Row -->
+               <div class="datetime-row">
+                  <div class="filter-group">
+                     <label>DATE</label>
+                     <div class="options-grid" id="date-options">
+                        <button type="button" class="opt-btn" data-value="Fri 26">Fri 26</button>
+                        <button type="button" class="opt-btn active" data-value="Sat 27">Sat 27</button>
+                        <button type="button" class="opt-btn" data-value="Sun 28">Sun 28</button>
+                        <button type="button" class="opt-btn" data-value="Mon 29">Mon 29</button>
+                        <button type="button" class="opt-btn" data-value="Tue 30">Tue 30</button>
+                     </div>
+                  </div>
+
+                  <div class="filter-group">
+                     <label>TIME</label>
+                     <div class="options-grid" id="time-options">
+                        <button type="button" class="opt-btn" data-value="12:00">12:00</button>
+                        <button type="button" class="opt-btn" data-value="14:00">14:00</button>
+                        <button type="button" class="opt-btn active" data-value="16:00">16:00</button>
+                        <button type="button" class="opt-btn" data-value="18:00">18:00</button>
+                        <button type="button" class="opt-btn" data-value="20:00">20:00</button>
+                        <button type="button" class="opt-btn" data-value="22:00">22:00</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Right Side: Booking Summary & Form Submission Card -->
+         <div class="col-md-6">
+            <div class="booking-right">
+               <form id="race-booking-form" class="booking-card">
+                  <div class="card-title">YOUR <span>BOOKING</span></div>
+
+                  <div class="summary-item">
+                     <span class="label">Service</span>
+                     <span class="value" id="sum-service">Arrive & Drive</span>
+                     <input type="hidden" name="service" id="input-service" value="Arrive & Drive">
+                  </div>
+
+                  <div class="summary-item">
+                     <span class="label">Package</span>
+                     <span class="value" id="sum-package">20 Laps</span>
+                     <input type="hidden" name="package" id="input-package" value="20 Laps">
+                  </div>
+
+                  <div class="summary-item">
+                     <span class="label">Date</span>
+                     <span class="value" id="sum-date">Sat 27</span>
+                     <input type="hidden" name="date" id="input-date" value="Sat 27">
+                  </div>
+
+                  <div class="summary-item">
+                     <span class="label">Time</span>
+                     <span class="value" id="sum-time">16:00</span>
+                     <input type="hidden" name="time" id="input-time" value="16:00">
+                  </div>
+
+                  <!-- Additional Form Inputs matching the design screenshot -->
+                  <div class="form-group mt-3">
+                     <input type="number" name="racers" placeholder="Number of Racers*" min="1" required class="form-line-input">
+                  </div>
+
+                  <div class="form-group">
+                     <input type="text" name="name" placeholder="Name*" required class="form-line-input">
+                  </div>
+
+                  <div class="form-group">
+                     <input type="tel" name="phone" placeholder="Phone*" required class="form-line-input">
+                  </div>
+
+                  <div class="form-group">
+                     <input type="email" name="email" placeholder="Email*" required class="form-line-input">
+                  </div>
+
+                  <div class="total-section">
+                     <span class="total-label">TOTAL</span>
+                     <span class="total-price" id="sum-total">RS. 4,500</span>
+                     <input type="hidden" name="total_price" id="input-total" value="4500">
+                  </div>
+
+                  <button type="submit" class="book-race-btn">
+                     PAY &amp; CONFIRM
+                  </button>
+                  <p class="terms-note">
+                     Members get up to 20% off this rate.
+                  </p>
+               </form>
+            </div>
+         </div>
+
+         <div class="col-md-12 mt-5">
+            <div class="custom-divider"></div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+      <section class="seasonal-offers-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7">
+                  <h2>
+                     SEASONAL OFFERS <br />&
+                     <span class="highlight">RACE-NIGHT</span> DROPS
+                  </h2>
+                  <p>
+                     
+                     Join our newsletter for first access to discount <br />
+                     codes and race-night invites.
+                  </p>
+               </div>
+
+               <div class="col-md-5">
+                  <form class="subscribe-form">
+                     <div class="input-wrap">
+                        <input
+                           type="email"
+                           placeholder="Your@email.com"
+                           required
+                        />
+                     </div>
+                     <button type="submit" class="book-race-btn">
+                        SUBSCRIBE
+                     </button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer-section">
+         <div class="container">
+            <div class="col-md-12">
+               <div class="footer-logo">
+                  <img class="img-fluid" src="assets/images/logo.webp" alt="" />
+               </div>
+            </div>
+            <div class="col-md-12 col-md-12 mb-5">
+               <div class="custom-divider"></div>
+            </div>
+
+            <div class="footer-grid">
+               <!-- Column 1: Race -->
+               <div class="footer-col">
+                  <h3>RACE</h3>
+                  <ul>
+                     <li><a href="#">Arrive & Drive</a></li>
+                     <li><a href="#">Professional Racing</a></li>
+                     <li><a href="#">Racing Academy</a></li>
+                     <li><a href="#">Private Track Rental</a></li>
+                  </ul>
+               </div>
+
+               <!-- Column 2: Membership -->
+               <div class="footer-col">
+                  <h3>MEMBERSHIP</h3>
+                  <ul>
+                     <li><a href="#">Starter Racer</a></li>
+                     <li><a href="#">Pro Racer</a></li>
+                     <li><a href="#">Elite Racer</a></li>
+                     <li><a href="#">Member benefits</a></li>
+                  </ul>
+               </div>
+
+               <!-- Column 3: Events -->
+               <div class="footer-col">
+                  <h3>EVENTS</h3>
+                  <ul>
+                     <li><a href="#">Corporate</a></li>
+                     <li><a href="#">Birthdays</a></li>
+                     <li><a href="#">School & College</a></li>
+                     <li><a href="#">Tournaments</a></li>
+                  </ul>
+               </div>
+
+               <!-- Column 4: Visit -->
+               <div class="footer-col">
+                  <h3>VISIT</h3>
+                  <ul>
+                     <li><a href="#">Book now</a></li>
+                     <li><a href="#">Track hours</a></li>
+                     <li><a href="#">Find us</a></li>
+                     <li><a href="#">Safety & FAQ</a></li>
+                  </ul>
+               </div>
+
+               <!-- Column 5: Connect -->
+               <div class="footer-col">
+                  <h3>CONNECT</h3>
+                  <ul>
+                     <li><a href="#">WhatsApp</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">YouTube</a></li>
+                     <li><a href="#">Newsletter</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="footer-bottom">
+               <div class="divider"></div>
+               <p>
+                  &copy; 2026 Torque X Karting Circuit &middot; Karachi,
+                  Pakistan
+               </p>
+            </div>
+         </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script type="text/javascript" src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -58,7 +58,97 @@ h5,
 h6 {
   font-family: "Race Sport";
 }
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: inherit;
+}
 
+.form-group {
+  margin-bottom: 25px;
+}
+/* Autofill Background & Text Color Fix */
+.form-line-input:-webkit-autofill,
+.form-line-input:-webkit-autofill:hover, 
+.form-line-input:-webkit-autofill:focus, 
+.form-line-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #121212 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(57, 57, 61);
+  padding: 10px 0;
+  color: #777;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+      color: #777;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: #ff1e1e;
+}
+
+.form-group > label {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.options-list label {
+  color: #ff3333;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.options-list input[type="radio"] {
+  accent-color: #ff3333;
+}
+
+.form-group textarea {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  resize: vertical;
+  min-height: 140px;
+  text-align: center;
+}
+
+.form-group textarea::placeholder {
+  text-align: center;
+  font-style: italic;
+}
+
+.contact-map {
+    padding-bottom: 100px;
+}
+.iframe-wrap{
+    border: 2px solid #aa0808;
+    padding: 10px;  
+}
 /* Top Announcement Bar */
 .top-announcement-bar {
   
@@ -997,6 +1087,8 @@ img.img-fluid.home-banner {
 
 .filter-group {
   margin-bottom: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 25px;
 }
 
 .filter-group label {
@@ -1048,8 +1140,8 @@ img.img-fluid.home-banner {
 }
 
 .opt-btn.active {
- background-color: #e62e2e;
-    border-color: #e62e2e;
+  background-color: #cc0000;
+  border-color: #cc0000;
   color: #fff;
 }
 
