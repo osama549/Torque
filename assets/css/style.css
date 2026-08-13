@@ -2249,6 +2249,9 @@ img.img-fluid.home-banner {
 }
 
 @media (max-width: 767px) {
+  .navbar-nav .nav-link{
+    padding: 10px 0;
+  }
   .hero-section.inner-hero .container-fluid {
     position: relative;
     top: 0%;
@@ -2302,7 +2305,15 @@ img.img-fluid.home-banner {
 
   .navbar-custom {
     margin: 0 15px;
+    padding: 12px 0;
   }
+  .dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+    width: 100%;
+    text-align: center;
+}
+.dropdown-item {
+    text-align: center !important;}
+    
   .custom-toggler {
     background: transparent;
     border: none;
