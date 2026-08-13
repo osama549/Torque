@@ -92,7 +92,67 @@ h6 {
   outline: none;
   transition: border-color 0.3s ease;
 }
+.custom-stats-wrapper {
+  padding: 40px 0;
+  font-family: inherit;
+}
 
+.stats-item-box {
+  padding: 20px;
+}
+
+.stats-count {
+  color: #cccccc;
+  font-size: 52px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+/* Custom Dropdown Styling for Dark Theme */
+.custom-dropdown-menu {
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  padding: 10px 0;
+}
+
+.custom-dropdown-menu .dropdown-item {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 20px;
+  transition: all 0.2s ease;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 30, 30, 0.15);
+  color: #ff1e1e;
+}
+.stats-title {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.corporate-bg-red{
+  background-color: #851719;
+   
+}
+.corporate-bg-red video{
+  max-width: 100%;
+}
+.corporate-bg-red .section-heading-1, .corporate-bg-red .section-heading-2{
+  color: #000;
+}
+.corporate-bg-red .section-heading-1 span, .corporate-bg-red .section-heading-2 span{
+  color: #ababab;
+}
+.corporate-bg-red .card-content {
+    background-color: #851719;
+  }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
       color: #777;
@@ -171,7 +231,7 @@ p {
 /* Header / Navbar */
 .navbar-custom {
   background-color: #0b0b0b;
-  padding: 10px 0;
+  padding: 0;
   border-bottom: 1px solid #1a1a1a;
   margin: 0 50px;
 }
@@ -205,6 +265,7 @@ p {
   transition: color 0.3s;
   font-family: "Race Sport";
   letter-spacing: 2px;
+      padding: 30px 0;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
@@ -1664,6 +1725,7 @@ img.img-fluid.home-banner {
 }
 .inner-header, .inner-hero{
   height: auto;
+      padding-bottom: 0;
 }
 .hero-section .container-fluid {
   position: absolute;
@@ -2095,7 +2157,19 @@ img.img-fluid.home-banner {
 .custom-toggler {
   display: none;
 }
-
+@media (min-width: 1200px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Smooth alignment fix */
+  }
+  .navbar-nav {
+    position: relative;
+    z-index: 9;
+}
+.custom-dropdown-menu {
+    top: 90px !important;
+}
+}
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
   .navbar-nav .nav-link {
     font-size: 12px;
